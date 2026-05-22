@@ -1,8 +1,6 @@
-/* ════════════════════════════════════════
-   style.css — Kngu Flower Shop
-   ════════════════════════════════════════ */
 
-/* ── CSS Variables ── */
+
+/*Color Palatte */
 :root {
   --pink-light:   #fdf0f3;
   --pink-mid:     #f7d6df;
@@ -17,7 +15,6 @@
   --white:        #ffffff;
 }
 
-/* Base */
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
@@ -218,23 +215,19 @@ body {
   margin-left: 8px;
 }
 
-/* ════════════════════════════════════════
-   HERO SECTION
-   ════════════════════════════════════════ */
+/*HERO SECTION*/
 .hero-section {
   background: 
     linear-gradient(rgba(255,245,247,0.45), rgba(255,245,247,0.45)),
     url("flowers1.jpg");
-    
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  min-height: 520px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 520px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .hero-section::before,
@@ -308,26 +301,6 @@ body {
   box-shadow: 0 12px 32px rgba(201,64,96,.4);
 }
 
-/* Hero image */
-.hero-img-wrap {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.hero-img-wrap img {
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
-  display: block;
-
-}
-
 /* Hero arrows */
 .hero-arrows {
   position: absolute;
@@ -368,9 +341,6 @@ body {
 .leaf-1 { top: 60px; left: 8%; transform: rotate(-30deg); font-size: 3rem; }
 .leaf-2 { bottom: 40px; right: 30%; transform: rotate(20deg); }
 
-/* ════════════════════════════════════════
-   RESPONSIVE
-   ════════════════════════════════════════ */
 @media (max-width: 991px) {
   .main-nav, .nav-search { display: none; }
   .navbar-toggler-custom { display: flex; }
@@ -387,9 +357,7 @@ body {
   }
 }
 
-/* ══════════════════════════════
-   FEATURES SECTION
-══════════════════════════════ */
+/* FEATURES SECTION */
 .features-section{
   padding: 70px 0;
   background: #fff;
@@ -427,7 +395,6 @@ body {
 }
 
 /* Icon Colors */
-
 .feature-icon.red {
   background: linear-gradient(135deg, var(--pink-accent), var(--pink-deep));
 }
@@ -478,16 +445,13 @@ body {
   margin: 0;
 }
 
-/* Responsive */
 @media(max-width:768px){
   .feature-card{
     padding: 20px;
   }
 }
 
-/* ══════════════════════════════
-   NEW PRODUCTS SECTION
-══════════════════════════════ */
+/* NEW PRODUCTS SECTION */
 
 /* Section wrapper */
 .products-section {
@@ -716,9 +680,7 @@ body {
   text-decoration: line-through;
 }
 
-/* ══════════════════════════════
-   DETAIL PANEL
-══════════════════════════════ */
+/* DETAIL PANEL */
 .detail-panel {
   display: none;
   padding: 80px 0;
@@ -881,16 +843,13 @@ body {
   transform: translateY(-2px);
 }
 
-/* ── Responsive ── */
 @media (max-width: 768px) {
   .prod-img-wrap { height: 200px; }
   .detail-inner { flex-direction: column; gap: 30px; }
   .detail-img-col { flex: 0 0 100%; max-width: 100%; }
 }
 
-/* ══════════════════════════════
-   TESTIMONIALS SECTION
-══════════════════════════════ */
+/* TESTIMONIALS SECTION */
 
 .testimonials-section {
   position: relative;
@@ -926,7 +885,6 @@ body {
   object-fit: contain;
 }
 
-/* ── Slider wrapper ── */
 .testi-slider {
   position: relative;
   z-index: 2;
@@ -935,7 +893,6 @@ body {
   margin: 0 auto;
 }
 
-/* ── Individual slide ── */
 .testi-slide {
   display: none;
   flex-direction: column;
@@ -1066,7 +1023,6 @@ body {
   transform: scale(1.35);
 }
 
-/* ── Responsive ── */
 @media (max-width: 768px) {
   .testi-prev { left:  6px; }
   .testi-next { right: 6px; }
@@ -1075,9 +1031,7 @@ body {
   .testi-text { font-size: 0.92rem; }
 }
 
-/* ══════════════════════════════
-   FLOWER EXPERTS SECTION
-══════════════════════════════ */
+/* FLOWER EXPERTS SECTION */
 
 .experts-section {
   padding: 90px 0 80px;
@@ -1125,7 +1079,6 @@ body {
   margin: 0 auto 22px;
   border-radius: 50%;
   overflow: hidden;
-  /* Pink ring around circle */
   border: 4px solid var(--pink-mid);
   box-shadow: 0 10px 30px rgba(232, 99, 122, 0.15);
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
@@ -1208,7 +1161,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* ── Responsive ── */
 @media (max-width: 768px) {
   .expert-img-wrap {
     width: 160px;
@@ -1223,9 +1175,7 @@ body {
   }
 }
 
-/* ══════════════════════════════
-   NEWSLETTER SECTION
-══════════════════════════════ */
+/* NEWSLETTER SECTION */
 
 .newsletter-section {
   background: var(--white);
@@ -1362,9 +1312,7 @@ body {
 }
 .nl-note i { color: var(--green-leaf); }
 
-/* ══════════════════════════════
-   SITE FOOTER
-══════════════════════════════ */
+/* SITE FOOTER */
 
 .site-footer {
   background: #1e1317;
@@ -1494,7 +1442,6 @@ body {
   width: 10px;
 }
 
-/* Contact snippet */
 .footer-contact {
   margin-top: 20px;
 }
@@ -1511,14 +1458,12 @@ body {
   font-size: 0.85rem;
 }
 
-/* Divider */
 .footer-divider {
   height: 1px;
   background: rgba(255,255,255,0.07);
   margin: 50px 0 0;
 }
 
-/* Footer bottom bar */
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -1563,7 +1508,6 @@ body {
 }
 .pay-badge i { font-size: 0.9rem; }
 
-/* ── Responsive ── */
 @media (max-width: 768px) {
   .nl-title { font-size: 1.8rem; }
   .nl-deco  { display: none; }
@@ -1574,9 +1518,7 @@ body {
   .footer-payments { justify-content: center; }
 }
 
-/* ══════════════════════════════
-   FROM OUR BLOG SECTIO
-══════════════════════════════ */
+/* FROM OUR BLOG SECTIO */
 
 .blog-section {
   padding: 90px 0 80px;
@@ -1714,14 +1656,11 @@ body {
   color: var(--pink-mid);
 }
 
-/* ── Responsive ── */
 @media (max-width: 768px) {
   .blog-img-wrap { height: 190px; }
 }
 
-/* ══════════════════════════════
-   FEATURED ITEMS SECTION
-══════════════════════════════ */
+/* FEATURED ITEMS SECTION */
 
 .featured-section {
   padding: 90px 0 80px;
@@ -1985,7 +1924,6 @@ body {
   text-decoration: line-through;
 }
 
-/* ── Responsive ── */
 @media (max-width: 768px) {
   .fitem-img-wrap { height: 170px; }
   .fitem-img-wrap img { height: 140px; }
